@@ -13,7 +13,7 @@
 
 (defparameter terminal "mlc")
 
-(defparameter my-configs
+(defparameter *my-configs*
   '("keymaps"
     "hooks"
     "commands"
@@ -27,7 +27,7 @@
                                     (list ".stumpwm.d"))))
 
 (defun my-setup-load-configs ()
-  (loop for file in my-configs
+  (loop for file in *my-configs*
         do (load (merge-pathnames (make-pathname :name file :type "lisp"
                                                  :directory '(:relative "conf" )) *my-rc-dir*))))
 
