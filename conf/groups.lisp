@@ -10,7 +10,7 @@
   (let ((main (current-group))
         (web (gnewbg "web"))
         (dev (gnewbg "dev"))
-         (pc  (gnewbg "pc"))
+        (pc  (gnewbg "pc"))
         ;; (pc  (gnewbg-float "pc"))
         (media (gnewbg "media"))
         (file (gnewbg "file")))
@@ -26,7 +26,7 @@
     (clear-window-placement-rules) ; clear rules
 
     (define-frame-preference "main"
-        (0 t t :class "mltern"))
+        (0 t t :class "mlterm"))
 
     (define-frame-preference "web"
         ;; (fnumber raise lock), lock AND raise == jumpto
@@ -41,9 +41,9 @@
         ;; (fnumber raise lock), lock AND raise == jumpto
         (0 t t :class "Emacs"))
 
-     (define-frame-preference "pc"
-         (0 t t :class "MPlayer")
-       (0 t t :class "mplayer2"))
+    (define-frame-preference "pc"
+        (0 t t :class "MPlayer")
+      (0 t t :class "mplayer2"))
 
     (define-frame-preference "media"
         (0 t t :class "Audacious")
