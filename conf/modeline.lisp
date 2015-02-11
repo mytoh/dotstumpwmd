@@ -30,7 +30,7 @@
 ;; [[https://github.com/joelagnel/stumpwm-goodies/tree/master/mode-line]]
 (defun show-ip-address ()
   (let ((ip (run-shell-command "ifconfig em0 | grep 'inet ' | cut -d ' ' -f2 | head -n 1" t)))
-(substitute #\Space #\Newline ip)))
+    (substitute #\Space #\Newline ip)))
 
 (defun my-setup-modeline ()
   (if (not (head-mode-line (current-head)))
@@ -45,8 +45,8 @@
               ;;              " ^5*:cpu ^n%c %t"
               ;;              " ^5*:net ^n%l"
               "^>" ;; separator
-              " ^5*%d "
-"  "
+              "^(:fg \"#ac3b23\")%d"
+              "  "
               )))
 
 (my-setup-colours)
