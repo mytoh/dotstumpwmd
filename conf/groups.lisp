@@ -25,6 +25,14 @@
     ;; window placement rules
     (clear-window-placement-rules) ; clear rules
 
+    ;;; [[https://github.com/stumpwm/stumpwm/blob/master/sample-stumpwmrc.lisp][github]]
+    ;; Last rule to match takes precedence!
+    ;; TIP: if the argument to :title or :role begins with an ellipsis, a substring
+    ;; match is performed.
+    ;; TIP: if the :create flag is set then a missing group will be created and
+    ;; restored from *data-dir*/create file.
+    ;; TIP: if the :restore flag is set then group dump is restored even for an
+    ;; existing group using *data-dir*/restore file.
     (define-frame-preference "main"
         (0 t t :class "mlterm"))
 
