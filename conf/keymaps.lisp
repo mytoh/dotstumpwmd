@@ -57,9 +57,11 @@
  ("|"     "toggle-split"))
 
 (my-defkeys-top
+ ("s-r"  "exec dmenu_run -p '> ' -i -b -nb 'grey14' -nf 'orange' -sb 'grey10' -sf '#4d3e41' " )
+ ("s-RET" "exec mlterm")
  ;; window operation
- ("s-RET" "fullscreen")
  ("s-TAB" "next")
+ ("s-C" "kill")
  ;; group key map
  ("s-1" "gselect main")
  ("s-2" "gselect web")
