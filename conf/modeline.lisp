@@ -34,20 +34,21 @@
 
 (defun my-setup-modeline ()
   (if (not (head-mode-line (current-head)))
-      (toggle-mode-line (current-screen) (current-head)))
+      (toggle-mode-line (current-screen) (current-head))))
 
-  (setf *screen-mode-line-format*  ;; ^n : normal bg and fg color
-        (list "%g"
-              " ^2*%w "
-              '(:eval (show-ip-address))
-              ;; '(:eval (run-shell-command "~/.stumpwm.d/modeline.scm" t))
-              ;;" ^5*:music ^n%m"
-              ;;              " ^5*:cpu ^n%c %t"
-              ;;              " ^5*:net ^n%l"
-              "^>" ;; separator
-              "^(:fg \"#ac3b23\")%d"
-              "  "
-              )))
+
+(setf *screen-mode-line-format*  ;; ^n : normal bg and fg color
+      (list "%g"
+            " ^2*%w "
+            '(:eval (show-ip-address))
+            ;; '(:eval (run-shell-command "~/.stumpwm.d/modeline.scm" t))
+            ;;" ^5*:music ^n%m"
+            ;;              " ^5*:cpu ^n%c %t"
+            ;;              " ^5*:net ^n%l"
+            "^>" ;; separator
+            "^(:fg \"#ac3b23\")%d"
+            "  "
+            ))
 
 (my-setup-colours)
 (my-setup-modeline-options)

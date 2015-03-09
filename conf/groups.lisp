@@ -10,8 +10,8 @@
   (let ((main (current-group))
         (web (gnewbg "web"))
         (dev (gnewbg "dev"))
-        (pc  (gnewbg "pc"))
-        ;; (pc  (gnewbg-float "pc"))
+         (pc  (gnewbg "pc"))
+;;        (pc  (gnewbg-float "pc"))
         (media (gnewbg "media"))
         (file (gnewbg "file")))
 
