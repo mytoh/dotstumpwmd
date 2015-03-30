@@ -5,16 +5,12 @@
 
 (in-package #:stumpwm)
 
-;;(load-module "mpd")
-;;(load-module "notifications")
-;;(load-module "net")
-;;(load-module "cpu")
-;;(load-module "stumptray")
 
 (defparameter terminal "mlc")
 
 (defparameter *my-configs*
-  '("keymaps"
+  '("module"
+    "keymaps"
     "hooks"
     "commands"
     "modeline"
@@ -29,7 +25,7 @@
 (defun my-setup-load-configs ()
   (loop for file in *my-configs*
         do (load (merge-pathnames (make-pathname :name file :type "lisp"
-                                                 :directory '(:relative "conf" )) *my-rc-dir*))))
+                                                 :directory '(:relative "init.d" )) *my-rc-dir*))))
 
 (defun my-init ()
   (when *initializing*

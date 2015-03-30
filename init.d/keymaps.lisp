@@ -15,7 +15,7 @@
       ;; (defprogram-shortcut dmenu    :command "exec dmenu_run -p '> ' -i -b -nb 'grey14' -nf 'orange' -sb 'grey10' -sf '#4d3e41' "
       ;;   :key (kbd "r") :map map)
       ;;; rofi -now -font “snap 10” -fg “#505050” -bg “#000000” -hlfg “#ffb964” -hlbg “#000000” -o 85
-      (defprogram-shortcut dmenu    :command "exec rofi -show run -p '> ' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000'"
+      (defprogram-shortcut dmenu    :command "exec rofi -dmenu -show run -p '> ' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000'"
         :key (kbd "r") :map map)
       (defprogram-shortcut emacs :command "exec emacs" :key (kbd "e") :map map :props '(:class "Emacs"))
       (defprogram-shortcut v2c :command "exec v2c" :key (kbd "v") :map map)
@@ -69,11 +69,12 @@
  ("s-4" "gselect pc")
  ("s-5" "gselect media")
  ("s-6" "gselect file")
- ("s-C-1" "gmove main")
- ("s-C-2" "gmove web")
- ("s-C-3" "gmove dev")
- ("s-C-4" "gmove pc")
- ("s-C-5" "gmove media")
+ ("s-!" "gmove main")
+ ("s-@" "gmove web")
+ ("s-#" "gmove dev")
+ ("s-$" "gmove pc")
+ ("s-%" "gmove media")
+ ("s-^" "gmove file")
  ("s-[" "gprev")
  ("s-]" "gnext")
  ("s-{" "gprev-with-window")

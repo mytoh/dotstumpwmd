@@ -39,14 +39,35 @@
 
 (setf *screen-mode-line-format*  ;; ^n : normal bg and fg color
       (list "%g"
-            " ^2*%w "
-            '(:eval (show-ip-address))
+            " ^[^2*%w^] "
             ;; '(:eval (run-shell-command "~/.stumpwm.d/modeline.scm" t))
             ;;" ^5*:music ^n%m"
             ;;              " ^5*:cpu ^n%c %t"
             ;;              " ^5*:net ^n%l"
+
             "^>" ;; separator
+
+            ;; host
+            "^[^B^7*%h^] "
+
+            ;; ip
+            "^[^3*ip^] "
+            '(:eval (show-ip-address))
+
+            ;; cpu
+            ;;            "^[^8*cpu^] %f^[^4*MHz^] "
+
+            ;; mem
+            "^[^8*mem^] %M^[^9*%%^] "
+
+            ;; net
+            ;; "^[^8*%I^] %U^[^9*KiB/s^] %D^[^9*KiB/s^]"
+
+            ;; volume
+            "^[^8*vol^] %v"
+
             "^(:fg \"#ac3b23\")%d"
+
             "  "
             ))
 
