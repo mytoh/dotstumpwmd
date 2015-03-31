@@ -10,13 +10,13 @@
 
 (defparameter *my-configs*
   '("module"
-    "keymaps"
-    "hooks"
-    "commands"
+    "keymap"
+    "hook"
+    "command"
     "modeline"
-    "groups"
-    "options"
-    "programs"))
+    "group"
+    "option"
+    "program"))
 
 (defparameter *my-rc-dir*
   (make-pathname :directory (append (pathname-directory (user-homedir-pathname))
