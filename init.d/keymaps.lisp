@@ -79,6 +79,7 @@
  ("s-]" "gnext")
  ("s-{" "gprev-with-window")
  ("s-}" "gnext-with-window")
+ ("s-m" "unmaximize")
  )
 
 ;;input window keymap
