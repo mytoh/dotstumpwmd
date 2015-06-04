@@ -9,18 +9,18 @@
 
   (let ((main (current-group))
         (web (gnewbg "web"))
-        (dev (gnewbg "dev"))
+        (gnu (gnewbg "gnu"))
         (pc  (gnewbg "pc"))
         ;;(pc  (gnewbg-float "pc"))
         (media (gnewbg "media"))
-        (file (gnewbg "file")))
+        (pic (gnewbg "pic")))
 
     (defparameter *main-group* main)
     (defparameter *web-group*  web)
-    (defparameter *dev-group*  dev)
+    (defparameter *gnu-group*  gnu)
     (defparameter *pc-group*  pc)
     (defparameter *media-group* media)
-    (defparameter *file-group* file)
+    (defparameter *pic-group* pic)
 
     ;; window placement rules
     (clear-window-placement-rules) ; clear rules
@@ -45,7 +45,7 @@
       (0 nil t :class "Xombrero")
       (0 nil t :class "V2C"))
 
-    (define-frame-preference "dev"
+    (define-frame-preference "gnu"
         ;; (fnumber raise lock), lock AND raise == jumpto
         (0 nil t :class "Emacs"))
 
@@ -55,26 +55,27 @@
 
     (define-frame-preference "media"
         (0 nil t :class "Audacious")
-      (0 nil t :class "feh")
       (0 nil t :class "jd-Main")
       (0 nil t :Class "Vlc")
       (0 nil t :class "Qmmp")
       (0 nil t :class "Audacious")
       (0 nil t :class "mpv")
       (0 nil t :class "baka-mplayer")
-      (0 nil t :class "MComix")
       (0 nil t :class "gogglesmm")
 
       (0 nil t :class "Caja"))
 
-    (define-frame-preference "file"
+    (define-frame-preference "pic"
         (0 nil t :class "Pcmanfm")
       (0 nil t :class "Thunar")
       (0 nil t :class "Doublecmd")
       (0 nil t :class "Dolphin")
       (0 nil t :class "Nemo")
       (0 nil t :class "ROX-Filer")
-      (0 nil t :class "Rodent"))
+      (0 nil t :class "Rodent")
+
+      (0 nil t :class "MComix")
+      (0 nil t :class "feh"))
     ))
 
 (my-setup-groups)
