@@ -12,11 +12,11 @@
       (defprogram-shortcut terminal :command "exec mlc" :key (kbd "t") :map map :props '(:class "mlterm"))
       (defprogram-shortcut browser  :command "exec conkeror" :key (kbd "w") :map map)
       (defprogram-shortcut filer    :command "exec rox" :key (kbd "f") :map map :props '(:class "ROX-Filer"))
-      ;; (defprogram-shortcut dmenu    :command "exec dmenu_run -p '> ' -i -b -nb 'grey14' -nf 'orange' -sb 'grey10' -sf '#4d3e41' "
-      ;;   :key (kbd "r") :map map)
-      ;;; rofi -now -font “snap 10” -fg “#505050” -bg “#000000” -hlfg “#ffb964” -hlbg “#000000” -o 85
-      (defprogram-shortcut dmenu    :command "exec rofi -dmenu -show run -p '> ' -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000'"
+      (defprogram-shortcut dmenu    :command "exec dmenu_run -p '> ' -i -b -nb 'grey14' -nf 'orange' -sb 'grey10' -sf '#4d3e41' "
         :key (kbd "r") :map map)
+      ;;; rofi -now -font “snap 10” -fg “#505050” -bg “#000000” -hlfg “#ffb964” -hlbg “#000000” -o 85
+      ;; (defprogram-shortcut dmenu    :command "exec rofi -now -fg '#505050' -bg '#000000' -hlfg '#ffb964' -hlbg '#000000'"
+      ;;   :key (kbd "r") :map map)
       (defprogram-shortcut emacs :command "exec emacs" :key (kbd "e") :map map :props '(:class "Emacs"))
       (defprogram-shortcut v2c :command "exec v2c" :key (kbd "v") :map map)
       map))
@@ -68,13 +68,13 @@
  ("s-3" "gselect dev")
  ("s-4" "gselect pc")
  ("s-5" "gselect media")
- ("s-6" "gselect file")
+ ("s-6" "gselect pic")
  ("s-!" "gmove main")
  ("s-@" "gmove web")
  ("s-#" "gmove dev")
  ("s-$" "gmove pc")
  ("s-%" "gmove media")
- ("s-^" "gmove file")
+ ("s-^" "gmove pic")
  ("s-[" "gprev")
  ("s-]" "gnext")
  ("s-{" "gprev-with-window")
