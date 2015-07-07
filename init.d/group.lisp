@@ -60,10 +60,10 @@
       (0 nil t :class "Qmmp")
       (0 nil t :class "Audacious")
       (0 nil t :class "mpv")
+      (0 nil t :class "avplay")
       (0 nil t :class "baka-mplayer")
       (0 nil t :class "gogglesmm")
-
-      (0 nil t :class "Caja"))
+      )
 
     (define-frame-preference "pic"
         (0 nil t :class "Pcmanfm")
@@ -71,6 +71,7 @@
       (0 nil t :class "Doublecmd")
       (0 nil t :class "Dolphin")
       (0 nil t :class "Nemo")
+      (0 nil t :class "Caja")
       (0 nil t :class "ROX-Filer")
       (0 nil t :class "Rodent")
 

@@ -1,3 +1,7 @@
+
+(require :alexandria)
+(require :serapeum)
+
 (add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-volume-modeline")
 (add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-battery-modeline")
 (add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-cpu-modeline")
@@ -16,8 +20,8 @@
 (defun my-find-in-env (path env)
   (let ((paths (split-string (getenv env) ":")))
     (find-if
-     #'(lambda (s) (equal path   s))
-     paths))  )
+     (serapeum:op (equal path _))
+     paths)))
 
 (defun my-add-to-path-env (path)
   (let ((env "PATH"))
@@ -26,10 +30,15 @@
             (concatenate 'string (getenv env) ":"
                          path  )))))
 
-(my-add-to-path-env "/home/mytoh/huone/git/github.com/Jehops/swm-freebsd-volume-modeline")
-(my-add-to-path-env "/home/mytoh/huone/git/github.com/Jehops/swm-freebsd-net-modeline")
-(my-add-to-path-env "/home/mytoh/huone/git/github.com/Jehops/swm-freebsd-cpu-modeline")
-(my-add-to-path-env "/home/mytoh/huone/git/github.com/Jehops/swm-freebsd-mem-modeline")
+(defun my-home (path)
+  (concatenate 'string
+               (getenv "HOME") "/"
+               path))
+
+(my-add-to-path-env (my-home "huone/git/github.com/Jehops/swm-freebsd-volume-modeline"))
+(my-add-to-path-env (my-home "huone/git/github.com/Jehops/swm-freebsd-net-modeline"))
+(my-add-to-path-env (my-home "huone/git/github.com/Jehops/swm-freebsd-cpu-modeline"))
+(my-add-to-path-env (my-home "huone/git/github.com/Jehops/swm-freebsd-mem-modeline"))
 
 
 
