@@ -6,7 +6,7 @@
   (run-shell-command "exec sh ~/.fehbg" )
   ;; (run-shell-command "exec compton -i 0.9 -e 0.9" )
   ;; (run-shell-command "exec ~/.stumpwm.d/dzen.sh" )
-  (run-shell-command "exec unclutter -idle 1 -jitter 2 -root")
+  ;; (run-shell-command "exec unclutter -idle 1 -jitter 2 -root")
   (run-shell-command "exec wmname LG3D"))
 
 (defun my-set-cursor ()

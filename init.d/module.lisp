@@ -1,6 +1,6 @@
 
 (require :alexandria)
-(require :serapeum)
+;; (require :serapeum)
 
 (add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-volume-modeline")
 (add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-battery-modeline")
@@ -20,7 +20,7 @@
 (defun my-find-in-env (path env)
   (let ((paths (split-string (getenv env) ":")))
     (find-if
-     (serapeum:op (equal path _))
+     #'(lambda (p) (equal path p))
      paths)))
 
 (defun my-add-to-path-env (path)
