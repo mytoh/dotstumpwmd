@@ -34,7 +34,8 @@
     ;; TIP: if the :restore flag is set then group dump is restored even for an
     ;; existing group using *data-dir*/restore file.
     (define-frame-preference "main"
-        (0 nil t :class "mlterm"))
+        (0 nil t :class "mlterm")
+      (0 nil 'lock :class "URxvt"))
 
     (define-frame-preference "web"
         ;; (fnumber raise lock), lock AND raise == jumpto
@@ -47,7 +48,7 @@
 
     (define-frame-preference "gnu"
         ;; (fnumber raise lock), lock AND raise == jumpto
-        (0 nil t :class "Emacs"))
+        (0 'raise 'lock :class "Emacs"))
 
     (define-frame-preference "pc"
         (0 nil t :class "MPlayer")
