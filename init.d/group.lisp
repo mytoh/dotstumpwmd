@@ -78,7 +78,7 @@
 
       (0 nil t :class "MComix")
       (0 nil t :class "feh")
-      (0 nil t :class "sxiv")))
-  ))
+      (0 nil t :class "Sxiv"))
+    ))
 
 (my-setup-groups)
