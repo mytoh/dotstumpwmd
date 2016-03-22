@@ -9,8 +9,9 @@
   ;; (set-font "-mplus-goth_p-medium-r-normal--10-*-75-75-p-50-iso8859-1")
   ;; (set-font  "-artwiz-lime-normal-normal-normal-*-10-*-*-*-m-50-iso10646-1")
   ;; (set-font "-artwiz-limemod-medium-r-normal--10-110-75-75-m-50-iso8859-1")
-  ;; (set-font "-mplus-fxd-medium-r-normal--10-*-75-75-c-60-iso8859-1")
-  (set-font "-benis-lemon-medium-r-normal--10-*-75-75-m-50-iso8859-1")
+  (set-font "-mplus-fxd-medium-r-normal--10-*-75-75-c-60-iso8859-1")
+  ;; (set-font "-benis-lemon-medium-r-normal--10-*-75-75-m-50-iso8859-1")
+
   ;; windows
   (set-focus-color "khaki")
   (set-unfocus-color "grey10")
