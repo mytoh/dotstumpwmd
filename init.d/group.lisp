@@ -48,7 +48,7 @@
 
     (define-frame-preference "gnu"
         ;; (fnumber raise lock), lock AND raise == jumpto
-        (0 'raise 'lock :class "Emacs"))
+        (0 nil 'lock :class "Emacs"))
 
     (define-frame-preference "pc"
         (0 nil t :class "MPlayer")
