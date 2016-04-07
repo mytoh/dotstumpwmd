@@ -1,15 +1,15 @@
 
-(require :alexandria)
+;;(require :alexandria)
 ;; (require :serapeum)
 
-(add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-volume-modeline")
-(add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-battery-modeline")
-(add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-cpu-modeline")
-(add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-mem-modeline")
-(add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-net-modeline")
-(add-to-load-path "~/huone/git/github.com/Jehops/swm-freebsd-zfs-modeline")
-(add-to-load-path "~/huone/git/github.com/Jehops/swm-hostname-modeline")
-(add-to-load-path "~/huone/git/github.com/Jehops/swm-maildir-modeline")
+(add-to-load-path "~/.emacs.d/vendor/github.com/Jehops/swm-freebsd-volume-modeline")
+(add-to-load-path "~/.emacs.d/vendor/github.com/Jehops/swm-freebsd-battery-modeline")
+(add-to-load-path "~/.emacs.d/vendor/github.com/Jehops/swm-freebsd-cpu-modeline")
+(add-to-load-path "~/.emacs.d/vendor/github.com/Jehops/swm-freebsd-mem-modeline")
+(add-to-load-path "~/.emacs.d/vendor/github.com/Jehops/swm-freebsd-net-modeline")
+(add-to-load-path "~/.emacs.d/vendor/github.com/Jehops/swm-freebsd-zfs-modeline")
+(add-to-load-path "~/.emacs.d/vendor/github.com/Jehops/swm-hostname-modeline")
+(add-to-load-path "~/.emacs.d/vendor/github.com/Jehops/swm-maildir-modeline")
 
 (load-module "swm-freebsd-volume-modeline")
 (load-module "swm-freebsd-cpu-modeline")
@@ -35,10 +35,10 @@
                (getenv "HOME") "/"
                path))
 
-(my-add-to-path-env (my-home "huone/git/github.com/Jehops/swm-freebsd-volume-modeline"))
-(my-add-to-path-env (my-home "huone/git/github.com/Jehops/swm-freebsd-net-modeline"))
-(my-add-to-path-env (my-home "huone/git/github.com/Jehops/swm-freebsd-cpu-modeline"))
-(my-add-to-path-env (my-home "huone/git/github.com/Jehops/swm-freebsd-mem-modeline"))
+(my-add-to-path-env (my-home ".emacs.d/vendor/github.com/Jehops/swm-freebsd-volume-modeline"))
+(my-add-to-path-env (my-home ".emacs.d/vendor/github.com/Jehops/swm-freebsd-net-modeline"))
+(my-add-to-path-env (my-home ".emacs.d/vendor/github.com/Jehops/swm-freebsd-cpu-modeline"))
+(my-add-to-path-env (my-home ".emacs.d/vendor/github.com/Jehops/swm-freebsd-mem-modeline"))
 
 
 
